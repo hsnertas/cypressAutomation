@@ -20,6 +20,19 @@ describe("Find or Get Elements by Using Diffrent Locators", () => {
 
 
     })
+   //by attribute
+    cy.get('[type');
 
-  });
-});
+    //by className
+    cy.get('.btn.btn-primary');
+
+    //by class
+    cy.get("#wooden_spoon");
+
+    //if I want to use text: no xpath in cypress
+    cy.get('button').should('contain','Login').click();
+
+
+
+  })
+})
